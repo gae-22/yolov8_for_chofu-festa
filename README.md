@@ -11,13 +11,16 @@
 ```bash
 git clone ssh://git@gitlab.mma.club.uec.ac.jp:2223/gae/yolov8.git
 cd yolov8
-pip install -r requirements.txt     # install dependencies: recommend to use virtual environment
+
+# recomend to do following commands in virtual environment
+pip install -r requirements.txt     # install dependencies
 python detect.py --source 0         # webcam
 ```
 
 ## Virtual Environment
 
-仮想環境(venv)を作成するには，プロジェクトのディレクトリに移動して以下のコマンドを実行します．
+仮想環境を作成するには，プロジェクトのディレクトリに移動して以下のコマンドを実行します．
+今回は `venv`を用いて`.venv` という名前の仮想環境を作成します．
 
 ```bash
 python -m venv .venv            # create virtual environment
